@@ -1,0 +1,23 @@
+﻿<Page x:Class="Lab_5.ReceiptsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab_5"
+      mc:Ignorable="d"
+      Title="ReceiptsPage" Height="445.955" Width="714.887">
+
+    <Grid Background="#FFA4DAFF">
+        <DataGrid x:Name="ReceptsGrid" HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="485" Background="#FFB0EFFF"/>
+        <TextBox x:Name="add_box" HorizontalAlignment="Left" Height="25" Margin="503,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="14" ToolTip="Классификация"/>
+        <Button x:Name="add_button" Content="Добавить элемент" HorizontalAlignment="Left" Height="25" Margin="513,82,0,0" VerticalAlignment="Top" Width="165" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="add_button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="503,16,0,0" TextWrapping="Wrap" Text="Добавление" VerticalAlignment="Top" Width="186" FontSize="20" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="503,138,0,0" TextWrapping="Wrap" Text="Изменение" VerticalAlignment="Top" Height="34" Width="186" TextAlignment="Center" FontSize="20"/>
+        <TextBox x:Name="upload_box" HorizontalAlignment="Left" Height="25" Margin="503,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="14" ToolTip="Классификация"/>
+        <Button x:Name="upload_button" Content="Изменить элемент" HorizontalAlignment="Left" Height="25" Margin="513,201,0,0" VerticalAlignment="Top" Width="165" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="upload_button_Click"/>
+        <Button x:Name="delete_button" Content="Удалить элемент" HorizontalAlignment="Left" Height="31" Margin="513,365,0,0" VerticalAlignment="Top" Width="165" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="delete_button_Click"/>
+        <Button x:Name="Upload_button1" Content="Внести изменения" HorizontalAlignment="Left" Height="25" Margin="513,231,0,0" VerticalAlignment="Top" Width="165" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Upload_button1_Click"/>
+        <Button x:Name="Download" Content="Выгрузить чек" HorizontalAlignment="Left" Height="37" Margin="0,409,0,-0.4" VerticalAlignment="Top" Width="715" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Download_Click"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,21 @@
+﻿<Page x:Class="Lab_5.PurchasesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab_5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="PurchasesPage" Height="445.955" Width="714.887">
+
+    <Grid Background="#FFA4DAFF">
+        <StackPanel Grid.Column="0" Margin="0,0,439.2,36.6" Background="#FFB1F2FF">
+            <Label Content="Информация о чеке:" FontSize="16" Margin="49,0,53,0" BorderBrush="#FF227CFF" />
+            <Label x:Name="DateLabel" Content="Название" FontSize="12" HorizontalAlignment="Center" />
+            <Label x:Name="PayLabel" Content="Сумма" FontSize="12" HorizontalAlignment="Center" />
+        </StackPanel>
+        <DataGrid x:Name="ProductsDataGrid" Margin="276,0,0.2,36.6" Background="#FFB0EFFF" BorderBrush="{x:Null}" />
+        <Button x:Name="Download" Content="Выгрузить чек" HorizontalAlignment="Left" Height="37" Margin="0,409,0,-0.4" VerticalAlignment="Top" Width="715" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Download_Click"/>
+    </Grid>
+</Page>

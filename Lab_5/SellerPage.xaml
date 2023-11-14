@@ -1,0 +1,55 @@
+﻿<Window x:Class="Lab_5.SellerPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_5"
+        mc:Ignorable="d"
+        Title="SellerPage" Height="534.497" Width="745.69">
+    <Grid Background="#FFA4DAFF">
+        <Button Content="Покупка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="349" Height="33" FontSize="14" BorderBrush="#FF00A8FF" Click="Button_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00189C" Offset="0"/>
+                    <GradientStop Color="#FF4CB5FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4DC8FD" Offset="0.256"/>
+                    <GradientStop Color="#FF7DFCE8" Offset="0.668"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Сохранённые чеки" HorizontalAlignment="Left" VerticalAlignment="Top" Width="335" Height="33" Margin="349,0,0,0" FontSize="14" BorderBrush="#FF00A8FF" Click="Button_Click_2">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00189C" Offset="0"/>
+                    <GradientStop Color="#FF4CB5FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4DC8FD" Offset="0.256"/>
+                    <GradientStop Color="#FF7DFCE8" Offset="0.668"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Frame x:Name="PageFrame" HorizontalAlignment="Left" Height="472" Margin="0,33,0,-0.2" VerticalAlignment="Top" Width="739" NavigationUIVisibility="Hidden"/>
+        <Button Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Height="33" Margin="684,0,0,0" FontSize="14" BorderBrush="#FF00A8FF" Click="Button_Click_3">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00189C" Offset="0"/>
+                    <GradientStop Color="#FF4CB5FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4DC8FD" Offset="0.256"/>
+                    <GradientStop Color="#FF7DFCE8" Offset="0.668"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

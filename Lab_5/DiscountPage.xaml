@@ -1,0 +1,37 @@
+﻿<Page x:Class="Lab_5.DiscountPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab_5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="713.876"
+      Title="DiscountPage">
+
+    <Grid Background="#FFA4DAFF">
+        <DataGrid x:Name="DiscountGrid" HorizontalAlignment="Left" Height="412" VerticalAlignment="Top" Width="479" Background="#FFB0EFFF" BorderBrush="#FFA6D0F9"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="664,0,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" RenderTransformOrigin="0.73,0.499" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="1970474-3f51b5.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="664,40,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" RenderTransformOrigin="0.73,0.499" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="176-1764991_incident-icon-transparent-pictures-to-pin-on-pinterest.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="add_text" HorizontalAlignment="Left" Margin="536,135,0,0" TextWrapping="Wrap" Text="Добавление:" VerticalAlignment="Top" FontSize="20" Visibility="Hidden"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Height="23" Margin="508,167,0,0" VerticalAlignment="Top" Width="175" FontSize="14" SelectionChanged="ComboBox1_SelectionChanged" Visibility="Hidden" ToolTip="Товар"/>
+        <TextBox x:Name="Add_box1" HorizontalAlignment="Left" Height="23" Margin="508,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" FontSize="14" Visibility="Hidden" ToolTip="Итоговая цена"/>
+        <TextBox x:Name="Add_box2" HorizontalAlignment="Left" Height="23" Margin="508,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" FontSize="14" Visibility="Hidden" ToolTip="Скидка"/>
+        <Button x:Name="add_button" Content="Добавить элементы" HorizontalAlignment="Left" Height="23" Margin="508,251,0,0" VerticalAlignment="Top" Width="175" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="add_button_Click" Visibility="Hidden"/>
+        <Button x:Name="Delete_button" Content="Удалить элемент" HorizontalAlignment="Left" Height="23" Margin="508,389,0,0" VerticalAlignment="Top" Width="175" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Delete_button_Click"/>
+        <TextBlock x:Name="upload_text" HorizontalAlignment="Left" Margin="536,135,0,0" TextWrapping="Wrap" Text="Изменение:" VerticalAlignment="Top" FontSize="20" Visibility="Hidden"/>
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Height="23" Margin="508,167,0,0" VerticalAlignment="Top" Width="175" FontSize="14" SelectionChanged="ComboBox2_SelectionChanged" Visibility="Hidden" ToolTip="Товар"/>
+        <TextBox x:Name="Upload_box1" HorizontalAlignment="Left" Height="23" Margin="508,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" FontSize="14" Visibility="Hidden" ToolTip="Итоговая стоимость"/>
+        <TextBox x:Name="Upload_box2" HorizontalAlignment="Left" Height="23" Margin="508,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" FontSize="14" Visibility="Hidden" ToolTip="Скидка"/>
+        <Button x:Name="Upload_button" Content="Изменить элементы" HorizontalAlignment="Left" Height="23" Margin="508,251,0,0" VerticalAlignment="Top" Width="175" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Upload_button_Click" Visibility="Hidden"/>
+        <Button x:Name="Upload_button1" Content="Внесни изменения" HorizontalAlignment="Left" Height="23" Margin="508,279,0,0" VerticalAlignment="Top" Width="175" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Upload_button1_Click" Visibility="Hidden"/>
+        <Button x:Name="Import" Content="Импортировать данные" HorizontalAlignment="Left" Height="38" Margin="0,412,0,-0.4" VerticalAlignment="Top" Width="479" Background="#FF78D2F9" BorderBrush="#FF99EBFF" FontSize="16" Foreground="#FF0B4AB4" Click="Import_Click"/>
+    </Grid>
+</Page>
